@@ -1,0 +1,24 @@
+
+
+  <ng-container>
+    <div class="item" role="button" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed">
+   <h3 >{{titleText}}</h3>
+   <div class="icon" [ngClass]="{'isNotCollapsed' : !isCollapsed}">
+    <span>
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+       </span>
+   </div> 
+    </div>
+    <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+        <div class="show">
+          <p class="body-text">{{bodyText}}</p>
+          <strong><a style="margin:5px;">Learn more</a></strong ><span><i class="fas fa-arrow-circle-right" ></i></span>
+        </div>
+        <!-- ideally this would come as rich text to keep component generic -->
+      <div class="button-wrapper"> 
+        <button type="button" class="btn btn-outline-warning" style="margin:5px;">View offer</button>
+        <button type="button" class="btn btn-outline-primary" style="margin:5px;">Request Demo</button>
+      </div>
+      </div>
+  </ng-container>
+ 

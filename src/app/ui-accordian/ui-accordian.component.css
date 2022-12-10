@@ -1,0 +1,33 @@
+
+
+    .item {
+        padding: 20px 0;
+        border-bottom: 1px solid;
+        display: flex;
+        
+    }
+ .icon{
+         color: #3a86ff; 
+    } 
+    .item h3{
+        margin-right: auto;
+
+    }
+.icon:hover{
+    color: #f26b2c;
+}
+.isNotCollapsed{
+    color: #f26b2c;
+    transform: rotate(180deg);
+}
+span .fa-arrow-circle-right:before {
+    content: "\f0a9";
+    margin: auto;
+    color: tomato;
+}
+span .fa-arrow-circle-right {
+    content: "\f0a9";
+    margin: auto;
+    color: #3a86ff;
+}
+

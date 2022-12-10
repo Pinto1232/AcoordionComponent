@@ -1,0 +1,17 @@
+
+
+
+<div class="container" *ngIf="data |async as items">
+  <div class="row">
+    <div class="col-md-6">
+      <div *ngFor="let item of items ">
+        <app-ui-accordian  [titleText]="item.topic" [bodyText]="item.description" (click)="setImage(item.imgUrl!)" ></app-ui-accordian>
+      </div>
+    </div>
+   
+    <div class="col-md-6" *ngIf="imgSrc |async as img " >
+      <img class="img-fluid" *ngIf="toogle" src={{img}} alt="Notary-signing-Agents">
+    </div>
+  </div>
+</div>
+

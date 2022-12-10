@@ -1,0 +1,16 @@
+<ngb-accordion  class="custom1" role="button"  (click)="click($event)">
+	<ngb-panel  class="custom1" title={{titleText}}  >
+
+		<ng-template ngbPanelContent>
+		{{bodyText}}
+      <strong><a>Learn more</a></strong><span><i class="fas fa-arrow-circle-right"></i></span>
+<!-- ideally this would come as rich text to keep component generic -->
+      <div class="button-wrapper"> 
+        <button type="button" class="btn btn-outline-warning" style="margin:5px;">View offer</button>
+        <button type="button" class="btn btn-outline-primary" style="margin:5px;">Request Demo</button>
+      </div>
+      <!--  -->
+		</ng-template>
+	</ngb-panel>
+	
+</ngb-accordion>
